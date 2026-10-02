@@ -10,4 +10,8 @@ function multiplicar(a, b) {
   return a * b;
 }
 
-module.exports = { somar, ehPar, multiplicar };
+function subtrair(a, b) {
+  return a - b;
+}
+
+module.exports = { somar, ehPar, multiplicar, subtrair };
