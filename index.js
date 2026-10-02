@@ -19,4 +19,12 @@ function dividir(a, b) {
   return a / b;
 }
 
-module.exports = { somar, ehPar, multiplicar, subtrair, dividir };
+function ehPrimo(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+module.exports = { somar, ehPar, multiplicar, subtrair, dividir, ehPrimo };
