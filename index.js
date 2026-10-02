@@ -27,4 +27,8 @@ function ehPrimo(n) {
   return true;
 }
 
-module.exports = { somar, ehPar, multiplicar, subtrair, dividir, ehPrimo };
+function fatorial(n) {
+  return n <= 1 ? 1 : n * fatorial(n - 1);
+}
+
+module.exports = { somar, ehPar, multiplicar, subtrair, dividir, ehPrimo, fatorial };
